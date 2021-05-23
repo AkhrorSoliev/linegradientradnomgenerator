@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Kalam:wght@100;200;300;400;500;600;700&display=swap);
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kalam', handwriting;
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px
+}
+
+.btn {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: ease-in 0.5s;
+    outline: none;
+    border: none;
+    font-family: 'Kalam', handwriting;
+    font-size: 1rem;
+    animation: btnAnime 2s ease-in-out  infinite alternate;
+}
+
+@keyframes btnAnime {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.03);
+
+    }
+}
+
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+span {
+    font-size: 1rem;
+    color: #fff;
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ animation: footerAnime 5s ease-in-out  infinite alternate;
+}
+
+
+@keyframes footerAnime {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+
+    }
+}
+
+footer:hover {
+    animation-play-state: paused;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 1rem
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px
+    }
+
+    .btn {
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        transition: ease-in 0.5s;
+        outline: none;
+        border: none;
+        font-family: 'Kalam', handwriting;
+        font-size: 1rem;
+        animation: btnAnime 2s ease-in-out  infinite alternate;
+    }
+}
+
+
