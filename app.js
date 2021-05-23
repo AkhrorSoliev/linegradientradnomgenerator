@@ -6,6 +6,7 @@
 
 const btn = document.querySelector('.btn')
 const lineGrad = document.querySelector('.lineGrad')
+const playMusic = document.querySelector('.playMusic')
 
 btn.addEventListener('click', () => {
   loder()
@@ -47,5 +48,17 @@ function loder() {
   lineGrad.innerText = linearGrad
   document.body.style.background = linearGrad
 }
+
+let play = false
+let audio = new Audio('Ring.mp3')
+playMusic.addEventListener('click', () => {
+  if (!play) {
+    audio.play()
+  } else if (play) {
+    audio.pause()
+  }
+
+  play = !play
+})
 
 loder()

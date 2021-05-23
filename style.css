@@ -113,3 +113,23 @@ a {
 }
 
 
+.playMusic {
+    width: 100px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Kalam', handwriting;
+    color: royalblue;
+    font-weight: 500;
+    border-radius: 40px;
+    transition: ease-in 0.5s;
+}
+
+
+.playMusic:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
