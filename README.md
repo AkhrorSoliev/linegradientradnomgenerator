@@ -2,7 +2,7 @@
 With a single button you can create a rainbow glitter that is perfect for the background! Try it and you will definitely like it.♥
 
 
-Conect:
+Connect:
 
 Telegram:  t.me/akhror_web
 
